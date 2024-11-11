@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/two-sum/submissions/1446932852/?utm_source=instabyte.io&utm_medium=referral&utm_campaign=interview-master-100
 
 import java.util.HashMap;
+import java.util.Map;
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -31,7 +32,7 @@ class Solution {
 
 // It turns out we can do it in one-pass. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. If it exists, we have found a solution and return the indices immediately.
 
-class Solution {
+class Solution2 {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {

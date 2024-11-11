@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/valid-parentheses/submissions/1447470649/?utm_source=instabyte.io&utm_medium=referral&utm_campaign=interview-master-100
 
+import java.util.Stack;
+
 class Solution {
     public boolean isValid(String s) {
 
@@ -63,7 +65,7 @@ class Solution {
 // The space complexity of the solution is O(n), where n is the length of the input string. This is because the worst-case scenario is when all opening brackets are present in the string and the stack will have to store them all.
 
 
-class Solution {
+class Solution2 {
     public boolean isValid(String s) {
         // Create an empty stack to keep track of opening brackets
         Stack<Character> stack = new Stack<Character>();
@@ -96,7 +98,7 @@ class Solution {
 
 // JAVA solution without using stack
 
-public class Solution {
+public class Solution3 {
     public static boolean isValid(String s) {
         while (true) {
             if (s.contains("()")) {
