@@ -54,7 +54,7 @@ class Solution {
 
 // The above snowball approach is bit complex, it can be simplified by counting the number of 0s, 1s and 2s and then filling the array with the counts
 // then we can fill the array with the counts
-// It will still be O(n) time complexity and O(1) space complexity
+// It will still be O(2n) time complexity and O(1) space complexity
 
 
 // [Expected Approach] Dutch National Flag Algorithm – One Pass – O(n) Time and O(1) Space
