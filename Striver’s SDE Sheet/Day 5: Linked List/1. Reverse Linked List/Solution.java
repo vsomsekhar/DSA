@@ -1,5 +1,19 @@
 // https://leetcode.com/problems/reverse-linked-list/description/
 
+// ✅ Intuition
+// 	•	We reverse the linked list by redirecting the next pointers.
+// 	•	Maintain a newHead to track the head of the reversed list.
+// 	•	At each step:
+// 	•	Save the next node.
+// 	•	Reverse the pointer.
+// 	•	Move the head and newHead forward.
+
+// ⏰ Time Complexity
+// 	•	O(n) → We visit each node exactly once.
+
+// 🪴 Space Complexity
+// 	•	O(1) → Constant extra space used (only a few pointers).
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -44,17 +58,3 @@ class Solution {
         return newHead;
     }
 }
-
-// ✅ Intuition
-// 	•	We reverse the linked list by redirecting the next pointers.
-// 	•	Maintain a newHead to track the head of the reversed list.
-// 	•	At each step:
-// 	•	Save the next node.
-// 	•	Reverse the pointer.
-// 	•	Move the head and newHead forward.
-
-// ⏰ Time Complexity
-// 	•	O(n) → We visit each node exactly once.
-
-// 🪴 Space Complexity
-// 	•	O(1) → Constant extra space used (only a few pointers).

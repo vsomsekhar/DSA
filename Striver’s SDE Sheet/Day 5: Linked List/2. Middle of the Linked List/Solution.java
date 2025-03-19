@@ -1,5 +1,16 @@
 // https://leetcode.com/problems/middle-of-the-linked-list/description/
 
+// ✅ Intuition
+// 	•	slow moves one node at a time.
+// 	•	fast moves two nodes at a time.
+// 	•	When fast reaches the end (or becomes null), slow will be at the middle node.
+
+// ⏰ Time Complexity
+// 	•	O(n) → We visit each node at most once.
+
+// 🪴 Space Complexity
+// 	•	O(1) → Constant extra space used (only two pointers).
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -37,14 +48,3 @@ class Solution {
         return slow;
     }
 }
-
-// ✅ Intuition
-// 	•	slow moves one node at a time.
-// 	•	fast moves two nodes at a time.
-// 	•	When fast reaches the end (or becomes null), slow will be at the middle node.
-
-// ⏰ Time Complexity
-// 	•	O(n) → We visit each node at most once.
-
-// 🪴 Space Complexity
-// 	•	O(1) → Constant extra space used (only two pointers).
